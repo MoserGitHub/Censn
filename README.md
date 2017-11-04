@@ -4,3 +4,10 @@ Instruction:
 
 1) Copy censn.ado, censn.sthlp, sn_ltrun.ado into .../ado path
 2) Run Example.do, where a data example is provided
+
+Author:
+André Moser
+Institute of Social and Preventive Medicine (ISPM)
+University of Bern
+Finkenhubelweg 11
+Switzerland, CH-3012 Bern
