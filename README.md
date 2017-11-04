@@ -7,7 +7,8 @@ Instruction:
 
 Author:
 André Moser
-Institute of Social and Preventive Medicine (ISPM)
-University of Bern
-Finkenhubelweg 11
+
+Institute of Social and Preventive Medicine (ISPM),
+University of Bern,
+Finkenhubelweg 11,
 Switzerland, CH-3012 Bern
