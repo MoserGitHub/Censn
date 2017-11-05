@@ -1,6 +1,6 @@
 net install github, from("https://haghish.github.io/github/")
 
-github install MoserGitHub/Censn
+github install MoserGitHub/censn
 
 h censn
 
