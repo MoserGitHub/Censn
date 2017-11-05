@@ -1,4 +1,7 @@
-adopath + "X:/ado/"
+net install github, from("https://haghish.github.io/github/")
+
+github install MoserGitHub/Censn
+
 h censn
 
 webuse cancer, clear
