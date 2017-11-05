@@ -22,7 +22,7 @@ predict time1
 * Example with probability weights
 gen wght=runiform()*10
 summ wght
-censn age1 i.drug [pw=wght], censor(cen) lefttrun(age)
+censn age1 i.drug [pw=wght], failure(died) lefttrun(age)
 
 * Weibull regression
 streg i.drug, d(w)
