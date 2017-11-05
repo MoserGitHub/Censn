@@ -2,7 +2,7 @@ Implementation of the Stata code to a censored skew-normal approach with delayed
 
 Instruction:
 
-Load the https://github.com/MoserGitHub/Censn/blob/master/Example.do do-file into Stata 14. It uses the GitHub import function from http://haghish.github.io/github/, which requires Stata 14.
+Load the https://github.com/MoserGitHub/censn/blob/master/Example.do do-file into Stata 14. It uses the GitHub import function from http://haghish.github.io/github/, which requires Stata 14.
 
 Author:
 André Moser
