@@ -1,0 +1,8 @@
+d 'Censn':
+d {browse "https://github.com/MoserGitHub/Censn":GitHub} website
+d
+d Distribution-Date: November 5, 2017
+d
+F censn.ado
+F censn.sthlp
+F sn_ltrun.ado
