@@ -4,7 +4,7 @@ Instruction:
 
 Load the https://github.com/MoserGitHub/censn/blob/master/Example.do do-file into Stata 14. It uses the GitHub import function from http://haghish.github.io/github/, which requires Stata 14.
 
-In case of Stata <14 simply copy the files censn.ado, censn.sthlp, and sn_ltrun.ado into an ado-path, set properly the ado-path (adopath + "X:/ado/") and then run the Example.do file.
+In case of Stata <14 simply copy the files censn.ado, censn.sthlp, and sn_ltrun.ado into an ado-path and set properly the ado-path in Stata (adopath + "X:/ado/"). Then run the Example.do file.
 
 Author:
 André Moser
