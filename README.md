@@ -3,14 +3,15 @@ Implementation of the R and Stata code to a censored skew-normal approach with d
 Instruction:
 
 Stata
-===
+=
 
 Load the https://github.com/MoserGitHub/censn/blob/master/Example.do do-file into Stata 14. It uses the GitHub import function from http://haghish.github.io/github/, which requires Stata 14.
 
 In case of Stata <14 simply copy the files censn.ado, censn.sthlp, and sn_ltrun.ado into an ado-path and set properly the ado-path in Stata (adopath + "X:/ado/"). Then run the Example.do file.
 
 R
-===
+=
+See the SkewExample_R.pdf for a reproducible example.
 
 Author:
 André Moser
