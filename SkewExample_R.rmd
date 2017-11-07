@@ -1,0 +1,54 @@
+---
+title: 'Censored skew-normal regression with delayed entry'
+output: pdf_document
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontfamily: mathpazo
+fontsize: 11pt
+author: André Moser
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Reference: Moser A, Clough-Gorr K, Zwahlen M. (2015) Modeling absolute differences in life expectancy with a censored skew-normal regression approach. PeerJ 3:e1162 https://doi.org/10.7717/peerj.1162
+
+```{r 0, echo=F, results="hide"}
+path <- "xxx"
+```
+
+```{r data, echo=T, results="markup"}
+library(knitr)
+library(haven)
+
+source(paste(path, "censn.r", sep=""))
+data <- read_dta("http://www.stata-press.com/data/r12/cancer.dta")
+data <- data.frame(data)
+data$age1 <- data$age+data$studytime
+head(data)
+```
+
+Modeling results
+===
+
+```{r results, echo=T, results="markup", warning=T, message=F}
+### No censoring, no delayed-entry
+mod <- censn(age1~1, ltrun=NULL, data=data, weights = rep(5, nrow(data)))
+summary.censn(mod)
+### selm from package "sn"
+modsn <- selm(age1~1, family = "SN", data=data, opt.method="BFGS", weights = rep(5, nrow(data)))
+summary(modsn)
+
+### Censoring, but no delayed-entry
+mod <- censn(age1~1, failure=died, ltrun=NULL, data=data, opt.method="BFGS")
+summary.censn(mod)
+
+### Censoring and delayed entry
+mod <- censn(age1~1, failure=died, ltrun=age, data=data)
+summary.censn(mod)
+
+### Censoring and delayed entry, covariate drug
+mod <- censn(age1~factor(drug), failure=died, ltrun=age, data=data)
+summary.censn(mod)
+```
