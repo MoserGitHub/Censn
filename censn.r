@@ -183,8 +183,7 @@ sn.lik.cen.trun <- function(cp, y, X, fail, trun, w) {
 
 ### Summary after censn
 summary.censn <- function(object, alpha=0.05) {
-	z <- object
-  fishermat <- solve(0.5*z$hessian)
+  fishermat <- solve(0.5*object$hessian)
   semat <- sqrt(diag(fishermat))
   p.val <- sprintf("%.5f", 2*(1-pnorm(abs(object$coef/semat))))
     
