@@ -17,7 +17,3 @@ In case of Stata <14 simply copy the files censn.ado, censn.sthlp, and sn_ltrun.
 R
 =
 See the SkewExample_R.pdf for a reproducible example (markdown document SkewExample_R.Rmd).
-
-To do
-=
-The R function censn.r currently lacks robust standard errors (as for example usually derived from the sandwich package in R). Any solution, help or support in implementing that would be highly appreciated.
